@@ -144,13 +144,16 @@ a {
 }
 
 .hero-visual {
-    max-width: clamp(380px, 58vw, 760px);
-    justify-self: center;
+    width: 480px;
+    height: 251px;
 }
 
 .hero-visual img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .eyebrow {
