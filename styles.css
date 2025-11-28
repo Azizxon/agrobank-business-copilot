@@ -72,7 +72,7 @@ a {
     min-height: calc(100vh - 140px);
     padding: 1.5rem clamp(1rem, 4vw, 4rem) 3rem;
     overflow: hidden;
-    max-width: 1100px;
+    max-width: 1368px;
     margin: 0 auto;
 }
 
@@ -92,9 +92,8 @@ a {
 
 .grid {
     display: grid;
-    gap: 1.5rem;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .grid.two-columns {
@@ -121,7 +120,6 @@ a {
 .grid .mockup {
     position: relative;
     border-radius: calc(var(--radius) + 10px);
-    padding: 2rem;
     background: linear-gradient(135deg, rgba(113, 244, 200, 0.15), rgba(92, 171, 255, 0.15));
     border: 1px solid rgba(113, 244, 200, 0.35);
     box-shadow: 0 25px 55px rgba(5, 10, 22, 0.65);
@@ -144,16 +142,25 @@ a {
 }
 
 .hero-visual {
-    width: 480px;
-    height: 251px;
+    width: 680px;
+    height: 281px;
+    padding: 0;
+    margin: 0;
 }
 
 .hero-visual img {
-    width: 100%;
+    padding: 0;
+    margin: 0;
+    width: 150%;
     height: 100%;
     object-fit: cover;
     border-radius: var(--radius);
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.hero-copy {
+    width: 500px;
+    padding: 0;
+    margin: 0;
 }
 
 .eyebrow {
