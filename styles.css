@@ -121,7 +121,10 @@ a {
 .slide[data-index="0"].is-active .hero-copy .lead {
     animation-delay: 0.7s;
 }
-
+.slide .approach figure, .slide .approach img {
+    width: 100%;
+    height: 100%;
+}
 @keyframes enterDiagonal {
     from {
         opacity: 0;
