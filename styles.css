@@ -134,6 +134,7 @@ a {
 
 .grid.two-columns {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .grid.three-columns {
