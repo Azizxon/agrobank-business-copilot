@@ -93,6 +93,18 @@ a {
     text-align: center;
 }
 
+.slide.final-slide.is-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 220px);
+    text-align: center;
+}
+
+.slide.final-slide .hero-copy {
+    margin: 0;
+}
+
 .slide[data-index="0"].is-active .hero-copy > * {
     opacity: 0;
     animation: enterDiagonal 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
@@ -405,6 +417,17 @@ h2 {
     position: absolute;
     left: -1.9rem;
     top: 0.35rem;
+}
+
+/* Larger text for timeline items */
+.timeline li strong {
+    font-size: 1.05rem;
+}
+
+.timeline li span {
+    display: block;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .cta {
