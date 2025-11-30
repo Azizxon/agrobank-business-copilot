@@ -69,3 +69,15 @@ document.addEventListener('touchend', (event) => {
 
 // Initialize first slide state.
 setSlide(0);
+
+const playButton = document.getElementById('play-audio-btn');
+const audio = document.getElementById('background-audio');
+
+if (playButton && audio) {
+  playButton.addEventListener('click', () => {
+    audio.play().catch(error => {
+      console.log('Could not play audio:', error);
+    });
+    playButton.style.display = 'none';
+  }, { once: true }); // Ensure the event listener is removed after first click
+}
